@@ -31,6 +31,7 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@semantic-release/npm": "^5.2.0",
     "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
     "cz-conventional-changelog": "^3.0.2",
@@ -43,7 +44,8 @@
     "semantic-release": "^15.13.27"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "config": {
     "commitizen": {
