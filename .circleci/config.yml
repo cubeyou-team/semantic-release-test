@@ -24,9 +24,9 @@ workflows:
     # Run the test jobs first, then the release only when all the test jobs are successful
     jobs:
       - test:
-          context: HX-COMPONENTS    
+          context: SR-TEST    
       - release:
-          context: HX-COMPONENTS
+          context: SR-TEST
           requires:
             - test
           filters:
