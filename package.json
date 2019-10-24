@@ -1,14 +1,17 @@
 {
   "name": "semantic-release-test",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "semantic-release-test",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "./node_modules/.bin/babel src/index.js --out-file index.js",
     "commit": "npx git-cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release pre &amp;&amp; npm publish &amp;&amp; semantic-release post"
   },
+  "keywords": [
+    "semantic-release"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cubeyou-team/semantic-release-test.git"
@@ -37,7 +40,7 @@
     "query-string": "^6.5.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "semantic-release": "^15.13.24"
+    "semantic-release": "^15.13.27"
   },
   "publishConfig": {
     "access": "public"
