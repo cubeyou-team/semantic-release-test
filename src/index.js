@@ -5,7 +5,7 @@ export default class TestComponent extends Component {
     render () {
 
         return (
-            <div>Test Title 3</div>
+            <div>Test Title 4</div>
         )
 
     }
