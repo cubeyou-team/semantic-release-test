@@ -1,0 +1,45 @@
+{
+  "name": "semantic-release-test",
+  "version": "1.0.0",
+  "description": "semantic-release-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "./node_modules/.bin/babel src/index.js --out-file index.js",
+    "commit": "npx git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cubeyou-team/semantic-release-test.git"
+  },
+  "author": "Marco Di Meco",
+  "license": "ISC",
+  "homepage": "https://github.com/cubeyou-team/semantic-release-test.git#readme",
+  "peerDependencies": {
+    "jwt-decode": "^2.2.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3",
+    "query-string": "^6.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@testing-library/jest-dom": "^4.1.2",
+    "@testing-library/react": "^9.3.0",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "jwt-decode": "^2.2.0",
+    "query-string": "^6.5.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "semantic-release": "^15.13.24"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
